@@ -880,10 +880,47 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
-body {
+/* body {
   background-image: url('../../images/bg03.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+} */
+.marketplace-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2em 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.marketplace-buttons .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1cb495;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.marketplace-buttons .button:hover {
+  background-color: #1fcaa7;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 736px) {
+  .marketplace-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .marketplace-buttons .button {
+    width: 100%;
+    max-width: 300px;
+  }
 }
