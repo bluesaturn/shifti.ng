@@ -1,1 +1,5 @@
-https://www.shifti.ng/*  https://shifti.ng/:splat  301!
+# Forza HTTPS
+http://*    https://:splat    301!
+
+# Redirect www → non-www
+https://www.shifti.ng/*    https://shifti.ng/:splat    301!
